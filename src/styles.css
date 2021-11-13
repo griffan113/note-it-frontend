@@ -7,3 +7,9 @@
   box-sizing: border-box;
   outline: 0;
 }
+
+:root {
+  --darkPrimary: #3d3d3d;
+  --darkSecondary: #2d2d2d;
+  --primary: #1aeab6;
+}
