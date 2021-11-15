@@ -1,5 +1,5 @@
-<div>
-  <div class="welcome-">
+<div class="container">
+  <div class="welcome">
     <img src="../../../../../assets/logo.png" alt="logo" />
     <strong>Bem Vindo!</strong>
     <span
@@ -8,27 +8,46 @@
     >
   </div>
   <div class="login-form">
-    <strong>Entrar</strong>
-    <form (ngSubmit)="onSubmit()">
-      <div class="form-control">
-        <input
-          [(ngModel)]="email"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-        />
-      </div>
-      <div class="form-control">
-        <input
-          [(ngModel)]="password"
-          type="text"
-          name="password"
-          id="password"
-          placeholder="Senha"
-        />
-      </div>
-      <button class="submit_login_button" type="submit">Entrar</button>
-    </form>
+    <section>
+      <strong>Entrar</strong>
+      <form (ngSubmit)="onSubmit()">
+        <div class="login-input">
+          <fa-icon [icon]="faUser"></fa-icon>
+          <input
+            required
+            [(ngModel)]="email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="login-input">
+          <fa-icon [icon]="faLock"></fa-icon>
+          <input
+            required
+            [(ngModel)]="password"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Senha"
+          />
+        </div>
+        <button
+          [disabled]="ngDoCheck()"
+          [style]="buttonStyle"
+          class="submit-login-button"
+          type="submit"
+        >
+          Entrar
+        </button>
+      </form>
+      <span
+        >Não tem uma conta?
+        <a [routerLink]="['/register']" routerLinkActive="router-link-active"
+          >Registre-se</a
+        ></span
+      >
+    </section>
   </div>
 </div>

@@ -1,0 +1,135 @@
+div.container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+div.container > div.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 50%;
+  background-color: var(--primary);
+}
+
+div.container > div.welcome > strong {
+  font-family: var(--font);
+  color: var(--darkSecondary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+div.container > div.welcome > span {
+  font-family: var(--font);
+  color: var(--darkSecondary);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  max-width: 350px;
+}
+
+div.container > div.welcome > img {
+  max-width: 250px;
+}
+
+section > form {
+  margin-top: 30px;
+}
+
+div.container > div.login-form {
+  background-color: var(--whitePrimary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 50%;
+}
+
+div.container > div.login-form > section > strong {
+  font-family: var(--font);
+  color: var(--darkSecondary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+div.container > div.login-form > section {
+  width: 320px;
+}
+
+section > form > div.login-input {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 2px solid var(--whiteTertiary);
+}
+
+section > form > div.login-input + div.login-input {
+  margin-top: 10px;
+}
+
+section > form > div.login-input > fa-icon {
+  color: var(--whiteTertiary);
+  margin-right: 10px;
+}
+
+section > form > div.login-input > input {
+  width: 100%;
+  background: transparent;
+  border: 0;
+
+  font-family: var(--font);
+  color: var(--darkPrimary);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+section > form > button.submit-login-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+section > span {
+  font-family: var(--font);
+  color: var(--darkSecondary);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+section > span > a {
+  font-family: var(--font);
+  color: #2c80ff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}

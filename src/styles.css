@@ -8,8 +8,26 @@
   outline: 0;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 :root {
   --darkPrimary: #3d3d3d;
   --darkSecondary: #2d2d2d;
+  --whitePrimary: #f8f8f8;
+  --whiteSecondary: #dddddd;
+  --whiteTertiary: #949494;
+  --whiteQuartiary: #6b6b6b;
   --primary: #1aeab6;
+  --primaryHover: #32c19e;
+  --font: 'Ubuntu', sans-serif;
 }
